@@ -16,9 +16,11 @@ public class CategoriaResource {
 	@GetMapping
 	public List<Categoria> listar() {
 		
+		
 		Categoria cat1 = new Categoria(1, "Informatica");
 		Categoria cat2 = new Categoria(2, "Escritorio");
 		Categoria cat3 = new Categoria(3, "Eletronicos");
+		
 		
 		List<Categoria> lista = new ArrayList<>();
 		lista.add(cat1);
