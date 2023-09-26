@@ -14,7 +14,6 @@ import com.cesarpereira.cursomc.domain.Categoria;
 import com.cesarpereira.cursomc.repositories.CategoriaRepository;
 
 
-
 @RestController
 @RequestMapping(value = "/categorias")
 public class CategoriaResource {
