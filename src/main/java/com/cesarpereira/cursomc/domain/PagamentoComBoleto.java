@@ -4,6 +4,10 @@ import java.util.Date;
 
 import com.cesarpereira.cursomc.domain.enums.EstadoPagamento;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+@Entity
+@Table (name = "pagamento_com_boleto", schema = "public")
 public class PagamentoComBoleto extends Pagamento {
 
 	private static final long serialVersionUID = 1L;

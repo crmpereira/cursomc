@@ -2,6 +2,12 @@ package com.cesarpereira.cursomc.domain;
 
 import com.cesarpereira.cursomc.domain.enums.EstadoPagamento;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+
+
+@Entity
+@Table (name = "pagamento_com_cartao", schema = "public")
 public class PagamentoComCartao extends Pagamento{
 
 	private static final long serialVersionUID = 1L;
