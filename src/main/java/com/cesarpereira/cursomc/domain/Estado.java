@@ -33,7 +33,6 @@ public class Estado   implements Serializable{
 	}
 	
 	
-	
 	public Estado(Integer id, String nome) {
 		super();
 		this.id = id;
