@@ -2,6 +2,8 @@ package com.cesarpereira.cursomc.domain;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
@@ -36,11 +38,15 @@ public class Pedido implements Serializable{
 	@JoinColumn(name="endereco_entrega_id")
 	private Endereco enderecoDeEntrega;
 	
+	private Set<ItemPedido> itens = new HashSet<>();
 	
 	public Pedido() {
 		
 	}
 
+	
+	
+	
 
 	public Pedido(Integer id, Date instante, Pagamento pagamento, Cliente cliente, Endereco enderecoDeEntrega) {
 		super();
@@ -126,6 +132,22 @@ public class Pedido implements Serializable{
 		} else if (!id.equals(other.id))
 			return false;
 		return true;
+	}
+
+
+
+
+
+	public Set<ItemPedido> getItens() {
+		return itens;
+	}
+
+
+
+
+
+	public void setItens(Set<ItemPedido> itens) {
+		this.itens = itens;
 	}
 	
 	
