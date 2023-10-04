@@ -2,10 +2,17 @@ package com.cesarpereira.cursomc.domain;
 
 import java.io.Serializable;
 
+import jakarta.persistence.EmbeddedId;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+
+@Entity
+@Table (name = "item_pedido", schema = "item_pedido")
 public class ItemPedido   implements Serializable  {
 
 	private static final long serialVersionUID = 1L;
 	
+	@EmbeddedId
 	private ItemPedidoPK  id = new ItemPedidoPK();
 	
 	
