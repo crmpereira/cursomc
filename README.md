@@ -12,3 +12,6 @@ Base de Dados PostGree
 
 ![imagem](https://github.com/crmpereira/cursomc/assets/50237220/c6458526-d06d-4f45-9066-6eaeb0943ed9)
 
+[06-A01+estudo-de-caso-java-spring-boot.pdf](https://github.com/crmpereira/cursomc/files/12825248/06-A01%2Bestudo-de-caso-java-spring-boot.pdf)
+
+
